@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content Aggregator Show</title>
+    <style>
+        h2 {
+            font-family: arial, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2> Content Aggregator (Show) </h2>
+
+<a href="/">return</a>
+<table>
+  <tr>
+      {% for title in headers %}
+          <th>{{ title }}</th>
+      {% endfor %}
+  </tr>
+  {% for inner_list in data_list %}
+    <tr>
+    {% for element in inner_list %}
+        {% if not loop.last %}
+           <td>{{ element }}</td>
+        {% else %}
+            <td><a href="{{ element }}">{{ element }}</a></td>
+        {% endif %}
+    {%  endfor %}
+    </tr>
+  {% endfor %}
+</table>
+
+<a href="/">return</a>
+
+</body>
+</html>
