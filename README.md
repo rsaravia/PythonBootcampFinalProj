@@ -12,6 +12,10 @@ Instrucciones para correr aplicacion
 
    mysql> GRANT ALL PRIVILEGES ON * . * TO 'roberto'@'%';
    Query OK, 0 rows affected (0.00 sec)
+   
+   mysql> CREATE DATABASE mydatabase;
+   Query OK, 0 rows affected (0.00 sec)
+
 
 3. Correr la aplicacion "models.py" $>python models.py
    (esto ultimo crea las tablas)
