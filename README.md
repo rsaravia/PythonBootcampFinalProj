@@ -28,3 +28,6 @@ Instrucciones para correr aplicacion
 
 Se ha considerado no duplicar las noticias del misma sitio web, y en cuanto a las consultas
 para no provocar un enorme listado, se han limitado a las consultadas durante la ultima semana
+
+Nota: el mentor hizo una prueba de dicha aplicacion en una MAC pero le mostro un error con la libreria PyMySQL, luego hizo el mismo proceso en windows y si funciono. Seguire haciendo pruebas en MAC para verificar si hay algun error.
+
